@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Viswa Restaurant</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #111;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    background: #111;
+    padding: 20px 0;
+}
+
+.navbar-brand {
+    color: #d6a84b !important;
+    font-family: 'Playfair Display', serif;
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.nav-link {
+    color: white !important;
+    margin-left: 18px;
+}
+
+.nav-link:hover {
+    color: #d6a84b !important;
+}
+
+.hero {
+    min-height: 620px;
+    background:
+    linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+    url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(42px, 7vw, 75px);
+    color: #e4bd70;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 19px;
+    margin: 20px 0 30px;
+}
+
+.gold-btn {
+    background: #d6a84b;
+    color: #111;
+    padding: 14px 30px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.gold-btn:hover {
+    background: white;
+    color: black;
+}
+
+.section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.section h2 {
+    font-family: 'Playfair Display', serif;
+    color: #d6a84b;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.about-text {
+    color: #ccc;
+    line-height: 2;
+}
+
+.dish-card {
+    background: #202020;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 25px;
+    transition: .3s;
+}
+
+.dish-card:hover {
+    transform: translateY(-8px);
+}
+
+.dish-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.dish-card h4 {
+    color: #d6a84b;
+    padding: 18px 10px 5px;
+}
+
+.dish-card p {
+    color: #ccc;
+    padding-bottom: 15px;
+}
+
+footer {
+    background: #080808;
+    padding: 30px;
+    text-align: center;
+    color: #aaa;
+}
+
+footer span {
+    color: #d6a84b;
+}
+
+@media(max-width:768px) {
+    .hero {
+        min-height: 500px;
+    }
+
+    .navbar-brand {
+        font-size: 21px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+<div class="container">
+
+<a class="navbar-brand" href="#">VISWA RESTAURANT</a>
+
+<button class="navbar-toggler" type="button"
+data-bs-toggle="collapse" data-bs-target="#navmenu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="navmenu">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+<li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+</ul>
+</div>
+
+</div>
+</nav>
+
+<!-- HERO SECTION -->
+<section class="hero">
+<div class="container">
+<h1>Welcome to<br>Viswa Restaurant</h1>
+
+<p>Experience The Taste Of Delicious Food</p>
+
+<a href="#menu" class="gold-btn">Explore Our Menu</a>
+<a href="#contact" class="gold-btn ms-2">Contact Us</a>
+</div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section class="section" id="about">
+<div class="container">
+<h2>About Our Restaurant</h2>
+
+<p class="about-text">
+Welcome to Viswa Restaurant.
+We serve delicious food prepared with
+fresh ingredients, traditional flavours
+and great care. Enjoy unforgettable
+moments with your family and friends.
+</p>
+</div>
+</section>
+
+<!-- MENU SECTION -->
+<section class="section" id="menu" style="background:#191919;">
+<div class="container">
+
+<h2>Our Special Dishes</h2>
+<p class="text-secondary mb-5">Discover our delicious food</p>
+
+<div class="row">
+
+<div class="col-md-4">
+<div class="dish-card">
+<img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641" alt="Indian Thali">
+<h4>Indian Special Thali</h4>
+<p>Traditional Indian flavours</p>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="dish-card">
+<img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38" alt="Pizza">
+<h4>Special Pizza</h4>
+<p>Fresh and tasty ingredients</p>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="dish-card">
+<img src="https://images.unsplash.com/photo-1513104890138-7c749659a591" alt="Food">
+<h4>Delicious Special</h4>
+<p>Made with love and care</p>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+<!-- FOOD MENU SECTION -->
+<section class="section" id="food-menu" style="background:#151515;">
+
+    <div class="container">
+
+        <h2>Our Food Menu</h2>
+
+        <p class="text-secondary mb-5">
+            Taste the Best Food at Viswa Restaurant
+        </p>
+
+        <div class="row">
+
+            <div class="col-md-4">
+                <div class="dish-card">
+                    <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641"
+                         alt="Indian Meals">
+
+                    <h4>South Indian Meals</h4>
+                    <p>Traditional Delicious Meals</p>
+                    <h4>₹150</h4>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="dish-card">
+                    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38"
+                         alt="Pizza">
+
+                    <h4>Special Pizza</h4>
+                    <p>Fresh and Cheesy Pizza</p>
+                    <h4>₹250</h4>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="dish-card">
+                    <img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398"
+                         alt="Chicken Curry">
+
+                    <h4>Chicken Curry</h4>
+                    <p>Traditional Spicy Chicken</p>
+                    <h4>₹200</h4>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+<!-- END FOOD MENU SECTION -->
+<!-- BOOK A TABLE SECTION -->
+<section class="section" id="booking" style="background:#191919; padding:60px 20px;">
+  <div class="container text-center">
+    <h2 style="color:#d6a84b;">Book a Table</h2>
+    <p style="color:white;">Reserve Your Table at Viswa Restaurant</p>
+
+    <form style="max-width:600px; margin:auto;">
+      <input type="text" class="form-control mb-3" placeholder="Your Name" required>
+
+      <input type="tel" class="form-control mb-3" placeholder="Mobile Number" required>
+
+      <input type="date" class="form-control mb-3" required>
+
+      <input type="time" class="form-control mb-3" required>
+
+      <input type="number" class="form-control mb-3" placeholder="Number of Guests" min="1" required>
+
+      <button type="button" class="btn btn-warning w-100">Book Now</button>
+    </form>
+  </div>
+</section>
+<!-- END BOOK A TABLE SECTION -->
+<!-- CONTACT SECTION -->
+<section class="section" id="contact">
+<div class="container">
+<h2>Visit Us Today</h2>
+<p class="about-text">
+Come and enjoy delicious food at Viswa Restaurant.
+</p>
+<a href="tel:+919488503868" class="gold-btn">Contact Us</a>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+<p>© 2026 <span>VISWA RESTAURANT</span>. All Rights Reserved.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
